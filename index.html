@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sydney Livingston</title>
+    
+    <!-- Open Graph / Social Preview -->
+    <meta property="og:title" content="Sydney Livingston">
+    <meta property="og:description" content="Connect with Sydney Livingston on LinkedIn">
+    <meta property="og:image" content="profile.png">
+    <meta property="og:url" content="https://sydneylivingston.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="profile.png">
+    
+    <!-- Font: Clean, professional, timeless -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --purple-accent: #6B4C9A;
+            --purple-light: #8B6BBF;
+            --purple-glow: rgba(107, 76, 154, 0.15);
+            --text-primary: #1a1a1a;
+            --text-secondary: #555;
+            --bg-warm: #FDFBF9;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: var(--bg-warm);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            color: var(--text-primary);
+        }
+        
+        .card {
+            text-align: center;
+            max-width: 400px;
+            animation: fadeUp 0.8s ease-out;
+        }
+        
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid white;
+            box-shadow: 
+                0 4px 20px rgba(0, 0, 0, 0.08),
+                0 0 0 1px var(--purple-glow);
+            margin-bottom: 1.75rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .profile-image:hover {
+            transform: scale(1.02);
+            box-shadow: 
+                0 8px 30px rgba(0, 0, 0, 0.12),
+                0 0 0 2px var(--purple-light);
+        }
+        
+        .name {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.25rem;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+        
+        .linkedin-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.875rem 1.75rem;
+            background: var(--purple-accent);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(107, 76, 154, 0.3);
+        }
+        
+        .linkedin-link:hover {
+            background: var(--purple-light);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(107, 76, 154, 0.4);
+        }
+        
+        .linkedin-link:active {
+            transform: translateY(0);
+        }
+        
+        .linkedin-icon {
+            width: 18px;
+            height: 18px;
+            fill: currentColor;
+        }
+        
+        /* Subtle background detail */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(ellipse at 30% 20%, var(--purple-glow) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 80%, var(--purple-glow) 0%, transparent 50%);
+            pointer-events: none;
+            z-index: -1;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <img 
+            src="profile.png" 
+            alt="Sydney Livingston" 
+            class="profile-image"
+        >
+        
+        <h1 class="name">Sydney Livingston</h1>
+        
+        <a 
+            href="https://www.linkedin.com/in/sydney-alivingston" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="linkedin-link"
+        >
+            <svg class="linkedin-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+            Connect on LinkedIn
+        </a>
+    </main>
+</body>
+</html>
